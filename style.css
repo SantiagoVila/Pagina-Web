@@ -36,6 +36,7 @@ header {
 /* Estilo inicial oculto para animaciones */
 .logo,
 .navlist li,
+.icons a,
 .hero-text h5,
 .hero-text h4,
 .hero-text h1,
@@ -69,32 +70,42 @@ header {
     animation-delay: 2.5s;
 }
 
-.hero-text h5 {
+.icons a:nth-child(1){
     animation-delay: 3s;
 }
-
-.hero-text h4 {
+.icons a:nth-child(2){
     animation-delay: 3.5s;
 }
-
-.hero-text h1 {
+.icons a:nth-child(3){
     animation-delay: 4s;
 }
 
-.hero-text p {
+.hero-text h5 {
     animation-delay: 4.5s;
 }
 
-.hero-text a {
+.hero-text h4 {
     animation-delay: 5s;
 }
 
-.hero-img img {
+.hero-text h1 {
     animation-delay: 5.5s;
 }
 
-.scroll-down i {
+.hero-text p {
     animation-delay: 6s;
+}
+
+.hero-text a {
+    animation-delay: 6.5s;
+}
+
+.hero-img img {
+    animation-delay: 7s;
+}
+
+.scroll-down i {
+    animation-delay: 7.5s;
 }
 
 @keyframes fadeInUp {
@@ -296,8 +307,27 @@ section {
     transform: translateY(-5px);
 }
 
+.icons {
+    position: absolute;
+    top: 50vh;
+    padding: 0 3%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all 0.5s ease;
+}
+
+.icons i:hover{
+    color: #4d4d4d;
+    transform: translateY(-5px);
+}
+
 /* Skillset Section */
-#skillset {
+/* #skillset {
     position: relative;
     padding-top: 100px;
     font-size: 120px;
@@ -309,7 +339,7 @@ section {
 #skillset .card {
     border: 1px solid black;
     font-size: 20px;
-}
+} */
 
 /* Responsive Adjustments */
 @media (max-width:992px) {
